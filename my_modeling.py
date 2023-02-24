@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # model 
 from sklearn.linear_model import LinearRegression
@@ -32,7 +30,8 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
-            
+        y_pred = y_pred.clip(0, 20)
+        
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
         return y_pred, rmse
@@ -43,7 +42,8 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
-            
+        y_pred = y_pred.clip(0, 20)
+        
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
         return y_pred, rmse
@@ -54,7 +54,8 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
-            
+        y_pred = y_pred.clip(0, 20)
+        
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
         return y_pred, rmse
@@ -65,7 +66,8 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
-            
+        y_pred = y_pred.clip(0, 20)
+        
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
         return y_pred, rmse
@@ -76,7 +78,8 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
-            
+        y_pred = y_pred.clip(0, 20)
+        
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
         return y_pred, rmse
@@ -87,6 +90,7 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
+        y_pred = y_pred.clip(0, 20)
             
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
@@ -98,6 +102,7 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
+        y_pred = y_pred.clip(0, 20)
             
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
@@ -109,6 +114,7 @@ class Val_Modeling() :
         
     
         y_pred = model.predict(self.test_X) # test 데이터를 넣어서 y의 예측값을 y_pred에 저장
+        y_pred = y_pred.clip(0, 20)
             
         rmse = np.sqrt(mean_squared_error(self.test_y, y_pred)) # rmse = sqrt(mse)
         
